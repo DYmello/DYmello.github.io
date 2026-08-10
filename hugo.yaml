@@ -1,6 +1,6 @@
 baseURL: "https://dymello.github.io/"
 locale: "en-US"
-title: "DYmello's Log"
+title: "Yao's Log"
 theme: "PaperMod"
 
 pagination:
@@ -70,7 +70,7 @@ menus:
 
 params:
   env: production
-  title: "DYmello's Log"
+  title: "Yao's Log"
   description: >-
     Research notes on what i have read.
   author: "DYmello"
