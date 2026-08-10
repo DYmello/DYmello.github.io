@@ -72,8 +72,7 @@ params:
   env: production
   title: "DYmello's Log"
   description: >-
-    Research notes on artificial intelligence, large language models, agents,
-    alignment, trustworthy AI, and machine learning.
+    Research notes on what i have read.
   author: "DYmello"
   mainSections:
     - posts
@@ -96,8 +95,7 @@ params:
   homeInfoParams:
     Title: "Welcome to DYmello's Log"
     Content: >-
-      Research notes on artificial intelligence, large language models,
-      autonomous agents, alignment, trustworthy AI, and related topics.
+      Reading, thinking, and recording.
 
   socialIcons:
     - name: github
