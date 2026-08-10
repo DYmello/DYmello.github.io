@@ -1,0 +1,117 @@
+baseURL: "https://dymello.github.io/"
+locale: "en-US"
+title: "DYmello's Log"
+theme: "PaperMod"
+
+pagination:
+  pagerSize: 10
+
+enableRobotsTXT: true
+enableEmoji: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+caches:
+  images:
+    dir: :cacheDir/images
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
+
+markup:
+  goldmark:
+    extensions:
+      passthrough:
+        enable: true
+        delimiters:
+          block:
+            - ['\[', '\]']
+            - ['$$', '$$']
+          inline:
+            - ['\(', '\)']
+  highlight:
+    noClasses: false
+
+menus:
+  main:
+    - name: Posts
+      url: /posts/
+      weight: 10
+    - name: Research
+      url: /research/
+      weight: 20
+    - name: Projects
+      url: /projects/
+      weight: 30
+    - name: Publications
+      url: /publications/
+      weight: 40
+    - name: Archive
+      url: /archives/
+      weight: 50
+    - name: Search
+      url: /search/
+      weight: 60
+    - name: Tags
+      url: /tags/
+      weight: 70
+    - name: About
+      url: /about/
+      weight: 80
+
+params:
+  env: production
+  title: "DYmello's Log"
+  description: >-
+    Research notes on artificial intelligence, large language models, agents,
+    alignment, trustworthy AI, and machine learning.
+  author: "DYmello"
+  mainSections:
+    - posts
+
+  defaultTheme: auto
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  showtoc: true
+  tocopen: false
+  comments: false
+
+  homeInfoParams:
+    Title: "Welcome to DYmello's Log"
+    Content: >-
+      Research notes on artificial intelligence, large language models,
+      autonomous agents, alignment, trustworthy AI, and related topics.
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/DYmello"
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 2
+    keys:
+      - title
+      - permalink
+      - summary
+      - content
